@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0b5cab"><link rel="manifest" href="manifest.json"><link rel="stylesheet" href="style.css"><title>Future Fighters</title></head>
+<body>
+<div id="login" class="login"><div class="login-card"><div class="logo">FF</div><h1>Future Fighters</h1><p>Management System</p><input id="user" placeholder="Username" autocomplete="username"><input id="pass" type="password" placeholder="Password" autocomplete="current-password"><button onclick="login()">Login</button><small>Demo: admin / admin123</small></div></div>
+<div id="app" class="hidden">
+<header><button class="menu" onclick="toggleNav()">☰</button><div><b>Future Fighters</b><small>Management System</small></div><button class="icon" onclick="logout()">⇥</button></header>
+<nav id="nav"><button data-page="dashboard" onclick="show('dashboard')">🏠 Dashboard</button><button data-page="members" onclick="show('members')">👥 Members</button><button data-page="monthly" onclick="show('monthly')">💰 Monthly</button><button data-page="events" onclick="show('events')">🎉 Events</button><button data-page="eventcontrib" onclick="show('eventcontrib')">🤝 Event Contributions</button><button data-page="expenses" onclick="show('expenses')">💸 Expenses</button><button data-page="reports" onclick="show('reports')">📊 Reports</button><button onclick="logout()">🚪 Logout</button></nav>
+<main id="main"></main>
+<div id="toast"></div>
+</div>
+<script src="app.js"></script></body></html>
